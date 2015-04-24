@@ -42,6 +42,8 @@ fdecode.txt: The key used by fdecode.R.
 run_analysis.R: An R script which performs the transformation on the original UMI 
 dataset, resulting in the data contained herein.
 
+UMI_data_info.txt: More information about the original data set and the original data.
+
 # How to Use
 
 Build this dataset from scratch:
