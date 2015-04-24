@@ -22,87 +22,8 @@ activity	Activity Measured
 			STANDING
 			LAYING
 			
-variables	This dataset includes a very large set of variables. These variables represent the mean of observations for each Subject/Activity combination for each feature. A general key for decoding the feature names is below
-
-			t=time domain signal
-			f=Fast Fourier Transform applied to produce frequency domain signal
-			Acc=accelerometer signal
-			Gyro=gyroscope 3-axial signal
-			Body=body specific signal
-			Gravity=gravity specific signal
-			Jerk=body linear acceleration and angular velocity were derived in time
-			Mag=magnitude of the three-dimensional Jerk signals, calculated using the Euclidean norm
-			mean=Mean value
-			std=Standard deviation
-			mad=Median absolute deviation
-			max=Largest value in array
-			min=Smallest value in array
-			sma=Signal magnitude area
-			energy=Energy measure. Sum of the squares divided by the number of values
-			iqr=Interquartile range 
-			entropy=Signal entropy
-			arCoeff=Autorregresion coefficients with Burg order equal to 4
-			correlation=correlation coefficient between two signals
-			maxInds=index of the frequency component with largest magnitude
-			meanFreq=Weighted average of the frequency components to obtain a mean frequency
-			skewness=skewness of the frequency domain signal 
-			kurtosis=kurtosis of the frequency domain signal 
-			bandsEnergy=Energy of a frequency interval within the 64 bins of the FFT of each window.
-			angle=additional vectors obtained by averaging the signals in a signal window sample
-			X/Y/Z=axis of signal
+variables	This dataset includes a very large set of variables. These variables represent the mean of observations for each Subject/Activity combination for each feature.
 			
-			This dataset is based on a dataset published by the UCI Machine Learning Repository.
-			UCI provided a document which describes their original feature names and contents, which
-			has been included as feature_info.text.
-			
-			Within the fdecode.R script, there is a function for assisting in decoding the feature
-			names while exploring the dataset:
-			
-			-----------------------------------------------------------------------
-			
-			Decode Feature Names in Human Activity Using Smartphone Dataset
-
-			Description
-
-			fdecode will return an analysis of a given feature name using the key provided by the UCI
-			Machine Learning Repository. This is in the form of a vector containing the feature name
-			as submitted, followed by each component of the feature with its key.
-
-			Usage
-
-			fedcode(feature)
-			
-			Arguments
-
-			feature
-			The name of the feature (from the original UCI dataset) or the name of the variable from
-			this dataset.
-
-			Examples
-			
-			> fdecode("m.tbodyacc.mean.x")
-			[1] "tbodyacc.mean.x"                                              
-			[2] "m: Mean of all observations for a given subject/activity pair"
-			[3] "t: time domain signal"                                        
-			[4] "Acc: accelerometer signal"                                    
-			[5] "Body: body specific signal"                                   
-			[6] "mean: Mean value"
-			
-			> fdecode("m.fbodybodygyrojerkmag.meanfreq")
-			[1] "fbodybodygyrojerkmag.meanfreq"                                                             
-			[2] "m: Mean of all observations for a given subject/activity pair"                            
-			[3] "f: Fast Fourier Transform applied to produce frequency domain signal"                      
-			[4] "Gyro: gyroscope 3-axial signal"                                                            
-			[5] "Body: body specific signal"                                                                
-			[6] "Jerk: body linear acceleration and angular velocity were derived in time"                  
-			[7] "Mag: magnitude of the three-dimensional Jerk signals, calculated using the Euclidean norm "
-			[8] "mean: Mean value"                                                                          
-			[9] "meanFreq: Weighted average of the frequency components to obtain a mean frequency"  
- 
-			-------------------------------------------------
-			
-			Finally, here is a list of all the variables contained in the dataset:
-
 			m.tbodyacc.mean.x
 			m.tbodyacc.mean.y
 			m.tbodyacc.mean.z
@@ -190,6 +111,86 @@ variables	This dataset includes a very large set of variables. These variables r
 			m.fbodybodygyromag.std
 			m.fbodybodygyrojerkmag.std
 
+			A general key for decoding the feature names is below
+
+			t=time domain signal
+			f=Fast Fourier Transform applied to produce frequency domain signal
+			Acc=accelerometer signal
+			Gyro=gyroscope 3-axial signal
+			Body=body specific signal
+			Gravity=gravity specific signal
+			Jerk=body linear acceleration and angular velocity were derived in time
+			Mag=magnitude of the three-dimensional Jerk signals, calculated using the Euclidean norm
+			mean=Mean value
+			std=Standard deviation
+			mad=Median absolute deviation
+			max=Largest value in array
+			min=Smallest value in array
+			sma=Signal magnitude area
+			energy=Energy measure. Sum of the squares divided by the number of values
+			iqr=Interquartile range 
+			entropy=Signal entropy
+			arCoeff=Autorregresion coefficients with Burg order equal to 4
+			correlation=correlation coefficient between two signals
+			maxInds=index of the frequency component with largest magnitude
+			meanFreq=Weighted average of the frequency components to obtain a mean frequency
+			skewness=skewness of the frequency domain signal 
+			kurtosis=kurtosis of the frequency domain signal 
+			bandsEnergy=Energy of a frequency interval within the 64 bins of the FFT of each window.
+			angle=additional vectors obtained by averaging the signals in a signal window sample
+			X/Y/Z=axis of signal
+			
+			This dataset is based on a dataset published by the UCI Machine Learning Repository.
+			UCI provided a document which describes their original feature names and contents, which
+			has been included as feature_info.text. Even more information can be foudn in the
+			UMI_data_info.txt file.
+			
+			Within the fdecode.R script, there is a function for assisting in decoding the feature
+			names while exploring the dataset:
+			
+			-----------------------------------------------------------------------
+			
+			Decode Feature Names in Human Activity Using Smartphone Dataset
+
+			Description
+
+			fdecode will return an analysis of a given feature name using the key provided by the UCI
+			Machine Learning Repository. This is in the form of a vector containing the feature name
+			as submitted, followed by each component of the feature with its key.
+
+			Usage
+
+			fedcode(feature)
+			
+			Arguments
+
+			feature
+			The name of the feature (from the original UCI dataset) or the name of the variable from
+			this dataset.
+
+			Examples
+			
+			> fdecode("m.tbodyacc.mean.x")
+			[1] "tbodyacc.mean.x"                                              
+			[2] "m: Mean of all observations for a given subject/activity pair"
+			[3] "t: time domain signal"                                        
+			[4] "Acc: accelerometer signal"                                    
+			[5] "Body: body specific signal"                                   
+			[6] "mean: Mean value"
+			
+			> fdecode("m.fbodybodygyrojerkmag.meanfreq")
+			[1] "fbodybodygyrojerkmag.meanfreq"                                                             
+			[2] "m: Mean of all observations for a given subject/activity pair"                            
+			[3] "f: Fast Fourier Transform applied to produce frequency domain signal"                      
+			[4] "Gyro: gyroscope 3-axial signal"                                                            
+			[5] "Body: body specific signal"                                                                
+			[6] "Jerk: body linear acceleration and angular velocity were derived in time"                  
+			[7] "Mag: magnitude of the three-dimensional Jerk signals, calculated using the Euclidean norm "
+			[8] "mean: Mean value"                                                                          
+			[9] "meanFreq: Weighted average of the frequency components to obtain a mean frequency"  
+ 
+			-------------------------------------------------
+			
 ```
 
 # Description of transformations and analysis performed on the data      
