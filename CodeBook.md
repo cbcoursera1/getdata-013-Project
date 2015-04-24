@@ -9,7 +9,7 @@ output: html_document
 DATA DICTIONARY - HUMAN ACTIVITY USING SMARTPHONES
 
 Data is found in datameans.txt
-      Space delimited, 180 observations of 88 variables.
+      		Space delimited, 180 observations of 88 variables.
 
 subject  	Subject ID
 			1..30
@@ -316,7 +316,7 @@ tidy.
 
 The feature names have been left as-is, and have been supplemented by a 
 function to decode what each means. It breaks down the naming convention and
-return a vector with the significance of each portion. I think this is
+returns a vector with the significance of each portion. I think this is
 the best way to make it accessible.
 
 This function is in fdecode.R.
