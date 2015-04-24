@@ -22,7 +22,8 @@ activity	Activity Measured
 			STANDING
 			LAYING
 			
-variables	This dataset includes a very large set of variables. These variables represent the mean of observations for each Subject/Activity combination for each feature.
+variables	This dataset includes a very large set of variables. These variables represent the mean of
+observations for each Subject/Activity combination for each feature.
 			
 			m.tbodyacc.mean.x
 			m.tbodyacc.mean.y
