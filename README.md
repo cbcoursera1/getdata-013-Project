@@ -46,14 +46,14 @@ dataset, resulting in the data contained herein.
 
 Build this dataset from scratch:
 
-1* Download the original dataset from UMI at the link provided above
-2* Run run_analysis.R
+1. Download the original dataset from UMI at the link provided above
+2. Run run_analysis.R
 
 View the dataset, as provided, in R:
 
-1* dt_datameans <- read.table("datameans.txt")
+1. dt_datameans <- read.table("datameans.txt")
 
 Understand more information about a given feature name:
 
-1* Run fdecode.R
-2* (eg) fdecode("m.tbodyacc.mean.z")
+1. Run fdecode.R
+2. (eg) fdecode("m.tbodyacc.mean.z")
