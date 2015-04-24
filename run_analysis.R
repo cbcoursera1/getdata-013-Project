@@ -153,7 +153,7 @@ rm(dt_activities, dt_data, dt_datasub, dt_features)
 ## finally, write the data to datameans.txt
 
 file <- file("datameans.txt")
-write.table(dt_datameans, "datameans.txt")
+write.table(dt_datameans, "datameans.txt", row.name = F)
 print("Write successful...")
 close(file)
 print("Finished.")

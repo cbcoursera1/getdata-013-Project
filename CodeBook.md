@@ -361,7 +361,7 @@ rm(dt_activities, dt_data, dt_datasub, dt_features)
 
 ```
 
-write.table(dt_datameans, "datameans.txt")
+write.table(dt_datameans, "datameans.txt", row.name = F)
 
 
 ```
