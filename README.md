@@ -20,7 +20,7 @@ All data was acquired from the UMI Machine Learning Repository at https://d396qu
 # Description
 
 This data summarizes various findings that were compiled from a set of Subjects
-conducting Activities, meausred by Samsung smartphones.
+conducting Activities, measured by Samsung smartphones.
 
 A more complete explanation of the analysis and data processing can be found in
 CodeBook.md.
